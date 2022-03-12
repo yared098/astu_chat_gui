@@ -40,7 +40,7 @@ class navigationDrawer extends StatelessWidget {
             onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (BuildContext context) => Dish_worked())),
+                    builder: (BuildContext context) => news_widget_reading())),
           ),
           Divider(),
           Row(

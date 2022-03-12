@@ -45,7 +45,7 @@ class _show_bottomState extends State<show_bottom> {
               hintText: 'Enter group name ',
               contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
               border:
-                  OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
             ),
           ),
         ),
@@ -70,7 +70,7 @@ class _show_bottomState extends State<show_bottom> {
               hintText: 'Enter grouplink ',
               contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
               border:
-                  OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
             ),
           ),
         ),
@@ -95,10 +95,23 @@ class _show_bottomState extends State<show_bottom> {
               hintText: 'Enter group admin ',
               contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
               border:
-                  OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
             ),
           ),
         ),
+        Padding(
+            padding: EdgeInsets.all(10),
+            child: MaterialButton(
+              color: Colors.black,
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text(
+                "create group",
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+            ))
       ]),
     );
   }
